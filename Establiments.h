@@ -32,7 +32,7 @@ public:
 
     vector<MunicipiResult> municipisPerComarca(int codiComarca) const;
     // pre: cert
-    // post: TODO
+    // post: 
 
     list<Establiment> establimentsPerMunicipi(const string &codiMunicipi) const;
     // pre: cert
