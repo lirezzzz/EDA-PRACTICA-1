@@ -21,12 +21,18 @@ const vector<Municipi> &Comarca::municipis() const {
 }
 
 int Comarca::cercaDicotomica(const string &codiMunicipi) const {
+    int pos;
+    return cercaDicotomica(codiMunicipi, pos);
+}
+
+int Comarca::cercaDicotomica(const string &codiMunicipi, int &pos) const {
     int esq = 0;
     int dre = int(a_municipis.size()) - 1;
     while (esq <= dre) {
         int mig = esq + (dre - esq) / 2;
         const string &codiMig = a_municipis[mig].codi();
         if (codiMig == codiMunicipi) {
+            pos = mig;
             return mig;
         }
         if (codiMig < codiMunicipi) {
@@ -35,6 +41,7 @@ int Comarca::cercaDicotomica(const string &codiMunicipi) const {
             dre = mig - 1;
         }
     }
+    pos = esq;
     return -1;
 }
 
@@ -44,13 +51,11 @@ bool Comarca::existeix(const string &codiMunicipi) const {
 
 void Comarca::afegirEstabliment(const string &codiMunicipi, const string &nomMunicipi,
                                 const Establiment &e) {
- int pos = cercaDicotomica(codiMunicipi);
+ int pos;
 
-  if (pos ==a_municipis.size() or a_municipis[pos].codi()!=codiMunicipi) //si pos esta al final (al numero de size, que surt fora del vector) o si on volem afegir hi ha ja un.
+  if (cercaDicotomica(codiMunicipi, pos) == -1) // no existeix: pos es on ha d'anar per mantenir l'ordre
   {
-    a_municipis.insert(a_municipis.begin() + pos, Municipi(codiMunicipi, nomMunicipi)); //el fiquem desplaçats n posicions fins on ha d'anar.
-    }
-    a_municipis[pos].afegirEstabliment(e);
+    a_municipis.insert(a_municipis.begin() + pos, Municipi(codiMunicipi, nomMunicipi));
   }
-
-
+  a_municipis[pos].afegirEstabliment(e);
+}

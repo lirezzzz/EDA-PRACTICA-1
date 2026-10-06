@@ -39,6 +39,10 @@ public:
     // pre: els municipis estan ordenats per codi idescat (ordre de string de menor a major basicament 0<3 en format string)
     // post: retorna la posició de codiMunicipi dins els municipis, o -1 si no hi és
 
+    int cercaDicotomica(const string &codiMunicipi, int &pos) const;
+    // pre: els municipis estan ordenats per codi idescat
+    // post: com la cerca d'un parametre, i pos és la posició de codiMunicipi o, si no hi és, on s'hauria d'inserir per mantenir l'ordre
+
     bool existeix(const string &codiMunicipi) const;
     // pre: els municipis estan ordenats per codi idescat (ordre de string, que funciona com hem especificat abans a la cerca dicotomica)
     // post: retorna cert si la comarca té un municipi amb codi codiMunicipi
