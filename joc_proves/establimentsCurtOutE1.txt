@@ -1,0 +1,134 @@
+********************
+* 01: Llegir dades *
+********************
+Numero de linies: 225
+*********************************
+* 02: Codi comarca -> municipis *
+*********************************
+Codi de comarca: 2
+Cadaqués => 1
+Castelló d'Empúries => 5
+Escala, l' => 6
+Figueres => 1
+Llançà => 2
+Port de la Selva, el => 1
+Roses => 11
+*********************************
+* 02: Codi comarca -> municipis *
+*********************************
+Codi de comarca: 20
+Girona => 2
+Llagostera => 2
+*********************************
+* 02: Codi comarca -> municipis *
+*********************************
+Codi de comarca: 25
+Pobla de Segur, la => 1
+*********************************
+* 02: Codi comarca -> municipis *
+*********************************
+Codi de comarca: 31
+Camprodon => 1
+*********************************
+* 02: Codi comarca -> municipis *
+*********************************
+Codi de comarca: 35
+Odèn => 1
+*************************************
+* 03: Codi municipi -> establiments *
+*************************************
+Codi de municipi: 171175
+Sense especificar | Torre | num: 00038 | Número inscripció: HUTG-006486 | places: 0 | estances: 0
+Sense especificar | Roncadora | num: 00047 | Número inscripció: HUTG-011295 | places: 8 | estances: 4
+Sense especificar | Consolat del Mar | num: 00012 | Número inscripció: HUTG-006508 | places: 0 | estances: 0
+Sense especificar | Balears | num: 00001 | Número inscripció: HUTG-055246 | places: 0 | estances: 0
+Sense especificar | Rapinya | num: 00010 | Número inscripció: HUTG-009359 | places: 0 | estances: 0
+Sense especificar | Chopitea | num: 00039 | Número inscripció: HUTG-026425 | places: 0 | estances: 0
+*************************************
+* 03: Codi municipi -> establiments *
+*************************************
+Codi de municipi: 171523
+Sense especificar | Canyelles | num: 00045 | Número inscripció: HUTG-012888 | places: 0 | estances: 0
+Sense especificar | de Rhode | num: 00093 | Número inscripció: HUTG-042375 | places: 0 | estances: 0
+Sense especificar | Cap Ponent | num: 00011 | Número inscripció: HUTG-051037 | places: 0 | estances: 0
+Sense especificar | Cap de la Gola | num: 00020 | Número inscripció: HUTG-028999 | places: 0 | estances: 0
+Sense especificar | Puig Rom | num: 00058 | Número inscripció: HUTG-026228 | places: 0 | estances: 0
+Sense especificar | Policlet | num: 00008 | Número inscripció: HUTG-029028 | places: 0 | estances: 0
+Sense especificar | Jeroni Pau | num: 27-31 | Número inscripció: HUTG-011657 | places: 0 | estances: 0
+Sense especificar | Nautilus | num: 00024 | Número inscripció: HUTG-020464 | places: 0 | estances: 0
+Sense especificar | Pau Vila | num: 00021 | Número inscripció: HUTG-018984 | places: 0 | estances: 0
+Sense especificar | Catalunya | num: 00019 | Número inscripció: HUTG-011036 | places: 0 | estances: 0
+Sense especificar | Joan Timoneda | num: 52BIS | Número inscripció: HUTG-046286 | places: 0 | estances: 0
+*************************************
+* 03: Codi municipi -> establiments *
+*************************************
+Codi de municipi: 439057
+Sense especificar | Josep Carner | num: 00016 | Número inscripció: HUTT-000788 | places: 0 | estances: 0
+Sense especificar | Cella | num: 00007 | Número inscripció: HUTT-052266 | places: 0 | estances: 0
+Sense especificar | Batlle Pere Molas | num: 00010 | Número inscripció: HUTT-007131 | places: 0 | estances: 0
+Sense especificar | Pasquales | num: 00001 | Número inscripció: HUTT-003143 | places: 0 | estances: 0
+Sense especificar | Pompeu Fabra | num: 00028 | Número inscripció: HUTT-032114 | places: 0 | estances: 0
+Sense especificar | B | num: 00003 | Número inscripció: HUTT-037339 | places: 0 | estances: 0
+Sense especificar | Valls | num: 00017 | Número inscripció: HUTT-045025 | places: 0 | estances: 0
+Sense especificar | Vendrell | num: 00014 | Número inscripció: HUTT-007914 | places: 0 | estances: 0
+Sense especificar | Cala Crancs | num: 00020 | Número inscripció: HUTT-014647 | places: 0 | estances: 0
+Sense especificar | de Bilbao | num: 00002 | Número inscripció: HUTT-004249 | places: 0 | estances: 0
+Sense especificar | Autovia Tarragona | num: 00002 | Número inscripció: HUTT-004062 | places: 0 | estances: 0
+Sense especificar | Punta del Cavall | num: 00029 | Número inscripció: HUTT-006004 | places: 0 | estances: 0
+Sense especificar | del Penedès | num: 00012 | Número inscripció: HUTT-064776 | places: 2 | estances: 0
+Sense especificar | de Saragossa | num: 00015 | Número inscripció: HUTT-065663 | places: 4 | estances: 0
+Sense especificar | Europa | num: 00011 | Número inscripció: HUTT-007890 | places: 0 | estances: 0
+Sense especificar | Vendrell | num: 00018 | Número inscripció: HUTT-006407 | places: 0 | estances: 0
+*************************************
+* 03: Codi municipi -> establiments *
+*************************************
+Codi de municipi: 171609
+Sense especificar | Palamos | num: 244-264 | Número inscripció: HUTG-004499 | places: 0 | estances: 0
+Sense especificar | Sant Feliu-Sant Pol | num: 00434 | Número inscripció: HUTG-004456 | places: 0 | estances: 0
+Sense especificar | COLOM | num: 31-59 | Número inscripció: HUTG-064532 | places: 4 | estances: 0
+*************************************
+* 03: Codi municipi -> establiments *
+*************************************
+Codi de municipi: 170792
+Girona Centre | Llibertat | num: 00043 | Número inscripció: HUTG-000395 | places: 0 | estances: 0
+Sense especificar | Jaume Pons i Martí | num: 00022 | Número inscripció: HUTG-052411 | places: 0 | estances: 0
+*************************************
+* 03: Codi municipi -> establiments *
+*************************************
+Codi de municipi: 431482
+Sense especificar | Cerdanya | num: 00010 | Número inscripció: HUTT-075708 | places: 5 | estances: 0
+Sense especificar | Cerdanya | num: 00021 | Número inscripció: HUTT-013835 | places: 0 | estances: 0
+Sense especificar | Baix Llobregat | num: 00022 | Número inscripció: HUTT-012396 | places: 0 | estances: 0
+Sense especificar | de la Font | num: 00002 | Número inscripció: HUTT-043563 | places: 0 | estances: 0
+Sense especificar | Barcelona | num: 00004 | Número inscripció: HUTT-010290 | places: 0 | estances: 0
+Sense especificar | Cristofor Colom | num: 00022 | Número inscripció: HUTT-012249 | places: 6 | estances: 0
+*************************************
+* 04: Municipi amb mes establiments *
+*************************************
+Barcelonès | Barcelona => 19
+Tarragonès | Salou => 16
+Alt Empordà | Roses => 11
+Selva | Lloret de Mar => 7
+Baix Camp | Mont-roig del Camp => 7
+Baix Empordà | Torroella de Montgrí => 6
+Baix Penedès | Vendrell, el => 6
+Baix Ebre | Ametlla de Mar, l' => 5
+Cerdanya | Bellver de Cerdanya => 4
+Garraf | Sitges => 4
+Maresme | Pineda de Mar => 3
+Montsià | Alcanar => 2
+Pla de l'Estany | Banyoles => 2
+Gironès | Girona => 2
+Alta Ribagorça | Vall de Boí, la => 2
+Pallars Sobirà | Alt Àneu => 1
+Noguera | Avellanes i Santa Linya, les => 1
+Ripollès | Camprodon => 1
+Baix Llobregat | Esplugues de Llobregat => 1
+Vallès Oriental | Granollers => 1
+Aran | Naut Aran => 1
+Solsonès | Odèn => 1
+Pallars Jussà | Pobla de Segur, la => 1
+Berguedà | Saldes => 1
+Vallès Occidental | Sant Cugat del Vallès => 1
+Bages | Sant Mateu de Bages => 1
+Garrotxa | Santa Pau => 1

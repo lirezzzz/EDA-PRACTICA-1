@@ -1,0 +1,374 @@
+********************
+* 01: Llegir dades *
+********************
+Numero de linies: 112714
+*********************************
+* 02: Codi comarca -> municipis *
+*********************************
+Codi de comarca: 1
+Aiguamúrcia => 39
+Alcover => 16
+Bràfim => 1
+Cabra del Camp => 10
+Figuerola del Camp => 4
+Garidells, els => 2
+Milà, el => 2
+Mont-ral => 15
+Montferri => 5
+Nulles => 12
+Pla de Santa Maria, el => 3
+Pont d'Armentera, el => 1
+Puigpelat => 6
+Querol => 12
+Riba, la => 2
+Rodonyà => 4
+Rourell, el => 3
+Vallmoll => 4
+Valls => 13
+Vila-rodona => 10
+Vilabella => 6
+*********************************
+* 02: Codi comarca -> municipis *
+*********************************
+Codi de comarca: 5
+Pont de Suert, el => 85
+Vall de Boí, la => 492
+Vilaller => 43
+*********************************
+* 02: Codi comarca -> municipis *
+*********************************
+Codi de comarca: 20
+Aiguaviva => 4
+Bescanó => 17
+Bordils => 12
+Campllong => 9
+Canet d'Adri => 12
+Cassà de la Selva => 29
+Celrà => 20
+Cervià de Ter => 2
+Flaçà => 3
+Fornells de la Selva => 19
+Girona => 827
+Juià => 8
+Llagostera => 64
+Llambilles => 9
+Madremanya => 27
+Quart => 15
+Salt => 14
+Sant Andreu Salou => 6
+Sant Gregori => 36
+Sant Joan de Mollet => 2
+Sant Jordi Desvalls => 23
+Sant Julià de Ramis => 19
+Sant Martí Vell => 16
+Sant Martí de Llémena => 22
+Sarrià de Ter => 3
+Vilablareix => 5
+Viladasens => 5
+*********************************
+* 02: Codi comarca -> municipis *
+*********************************
+Codi de comarca: 25
+Abella de la Conca => 8
+Castell de Mur => 20
+Conca de Dalt => 26
+Gavet de la Conca => 23
+Isona i Conca Dellà => 26
+Llimiana => 7
+Pobla de Segur, la => 59
+Salàs de Pallars => 22
+Sant Esteve de la Sarga => 6
+Sarroca de Bellera => 20
+Senterada => 15
+Talarn => 17
+Torre de Cabdella, la => 59
+Tremp => 106
+*********************************
+* 02: Codi comarca -> municipis *
+*********************************
+Codi de comarca: 30
+Ascó => 2
+Benissanet => 14
+Flix => 10
+Garcia => 3
+Ginestar => 8
+Miravet => 26
+Móra d'Ebre => 32
+Móra la Nova => 10
+Palma d'Ebre, la => 1
+Rasquera => 33
+Riba-roja d'Ebre => 17
+Tivissa => 31
+Torre de l'Espanyol, la => 6
+Vinebre => 8
+*********************************
+* 02: Codi comarca -> municipis *
+*********************************
+Codi de comarca: 35
+Biosca => 19
+Castellar de la Ribera => 3
+Clariana de Cardener => 9
+Coma i la Pedra, la => 30
+Guixers => 17
+Lladurs => 34
+Llobera => 4
+Molsosa, la => 8
+Navès => 31
+Odèn => 33
+Olius => 11
+Pinell de Solsonès => 8
+Pinós => 7
+Riner => 20
+Sant Llorenç de Morunys => 50
+Solsona => 58
+Torà => 16
+*************************************
+* 03: Codi municipi -> establiments *
+*************************************
+Codi de municipi: 170031
+Bassegoda Park | de Bassegoda | num: s/n | Número inscripció: KG-000130 | places: 318 | estances: 106
+Sense especificar | Mas la Costa | num: 00006 | Número inscripció: HUTG-021484 | places: 0 | estances: 0
+Sense especificar | La Cabana de la Costa | num: s/n | Número inscripció: HUTG-021485 | places: 0 | estances: 0
+Sense especificar | De Sant Pere, | num: 00009 | Número inscripció: HUTG-044751 | places: 0 | estances: 0
+EL TRIANÓ | de l' Abat Dòmnul | num: 00009 | Número inscripció: HUTG-070848 | places: 11 | estances: 0
+Casa en Albanyà zona rural | de l' Abat Dòmnul (Habitatge Unifamiliar) | num: 00005 | Número inscripció: HUTG-071743 | places: 7 | estances: 0
+Ca la Badona | Major | num: 00004 | Número inscripció: HUTG-077488 | places: 6 | estances: 0
+Sense especificar | Afores Parcel·la 61 Polígon 1 | num: s/n | Número inscripció: HUTG-078999 | places: 7 | estances: 0
+HOSTAL SANTUARI DE LA MARE DE DEU DEL MONT | SANT LLORENÇ | num: s/n | Número inscripció: HG-002431 | places: 12 | estances: 6
+Can Bosch | Can Bosch | num: s/n | Número inscripció: PG-000117 | places: 12 | estances: 6
+Can Martinot | Sant Llorenç de la Muga | num: 00001 | Número inscripció: PG-000631 | places: 9 | estances: 4
+Can Mas | Can Mas | num: s/n | Número inscripció: PG-000743 | places: 34 | estances: 14
+Can Coll de Pincaró | Can Coll-finca | num: 00085 | Número inscripció: PG-000804 | places: 8 | estances: 2
+Can Coll de Pincaró II | Can Coll | num: 00085 | Número inscripció: PG-000837 | places: 3 | estances: 1
+Mas Nou | Mas Nou | num: s/n | Número inscripció: PG-001400 | places: 8 | estances: 4
+*************************************
+* 03: Codi municipi -> establiments *
+*************************************
+Codi de municipi: 170433
+Fontalba Apartaments | Constans | num: s/n | Número inscripció: ATG-000006 | places: 18 | estances: 6
+Can Bonada | Sant Isidre | num: s/n | Número inscripció: ATG-000032 | places: 28 | estances: 7
+La Ruïra | Ruïra de Dalt-Afores | num: s/n | Número inscripció: ATG-000125 | places: 5 | estances: 2
+Sense especificar | Alt de la Manet | num: 00001 | Número inscripció: HUTG-010691 | places: 0 | estances: 0
+XIX | Tenalló | num: s/n | Número inscripció: HUTG-010774 | places: 0 | estances: 0
+XIX | Tenalló | num: s/n | Número inscripció: HUTG-010775 | places: 0 | estances: 0
+XIX | Cal Nap | num: s/n | Número inscripció: HUTG-010776 | places: 0 | estances: 0
+Mas Fustanyà | Mas Fustanyà | num: s/n | Número inscripció: HUTG-011226 | places: 0 | estances: 0
+Mas Fustanyà | Fustanyà | num: s/n | Número inscripció: HUTG-011228 | places: 0 | estances: 0
+Mas Fustanyà | Mas Fustanyà | num: s/n | Número inscripció: HUTG-011230 | places: 0 | estances: 0
+Sense especificar | Alt de la Manet | num: 0009B | Número inscripció: HUTG-013673 | places: 0 | estances: 0
+Masia Can Constans | Fontalba | num: H-A | Número inscripció: HUTG-014047 | places: 0 | estances: 0
+Masia Can Constans | Fontalba | num: H-B | Número inscripció: HUTG-014048 | places: 0 | estances: 0
+Masia Can Constans | Fontalba | num: H-C | Número inscripció: HUTG-014049 | places: 4 | estances: 2
+Masia Can Constans | Fontalba | num: H-D | Número inscripció: HUTG-014050 | places: 0 | estances: 0
+LA CASANOVA | Nou | num: 00004 | Número inscripció: HUTG-021576 | places: 6 | estances: 3
+Sense especificar | De la Font de Dalt | num: 00023 | Número inscripció: HUTG-036562 | places: 0 | estances: 0
+Sense especificar | Font de Dalt | num: 00004 | Número inscripció: HUTG-039335 | places: 0 | estances: 0
+Sense especificar | De Fontalba | num: s/n | Número inscripció: HUTG-040150 | places: 0 | estances: 0
+Sense especificar | ALT DE LA MANET | num: 00001 | Número inscripció: HUTG-050245 | places: 0 | estances: 0
+Sense especificar | de Dalt de Serrat | num: s/n | Número inscripció: HUTG-058798 | places: 0 | estances: 0
+Sense especificar | de la Coma de Baix | num: 00002 | Número inscripció: HUTG-060223 | places: 2 | estances: 0
+Sense especificar | de la Font de Dalt | num: 00020 | Número inscripció: HUTG-066554 | places: 5 | estances: 0
+Baix 1-7 | Baix | num: 001-7 | Número inscripció: HUTG-071922 | places: 2 | estances: 0
+Sense especificar | font de dalt | num: 00018 | Número inscripció: HUTG-071931 | places: 5 | estances: 0
+LA FARGA XALET | Paratge La Farga | num: s/n | Número inscripció: HUTG-074095 | places: 10 | estances: 0
+Vall de Núria | Estació de Muntanya Vall de Núria | num: s/n | Número inscripció: HG-000038 | places: 218 | estances: 95
+Rialb | Ribes-Queralbs | num: KM 3 | Número inscripció: HG-000039 | places: 54 | estances: 28
+L'Avet | Pla | num: 00021 | Número inscripció: HG-001457 | places: 12 | estances: 6
+Les Roquetes | Ribes | num: 00005 | Número inscripció: HG-002386 | places: 16 | estances: 8
+L'ORTIGA BLANCA | del Pla | num: 00014 | Número inscripció: HG-002525 | places: 15 | estances: 7
+Mas la Casanova | Casanova | num: s/n | Número inscripció: PG-000179 | places: 15 | estances: 6
+La Cabanya de Cal Forn | Serrat | num: s/n | Número inscripció: PG-000657 | places: 6 | estances: 2
+La Cabanya de Cal Forn II | Serrat | num: s/n | Número inscripció: PG-000658 | places: 5 | estances: 2
+Cal Janet de Serrat | Serrat | num: s/n | Número inscripció: PG-000786 | places: 5 | estances: 2
+Casa l'Hostal | Sant Isidre-Cal Janet II | num: s/n | Número inscripció: PG-000854 | places: 8 | estances: 3
+Hostal de Baix | Sant Isidre | num: s/n | Número inscripció: PG-000865 | places: 2 | estances: 1
+Can Jordà | la Davallada Petita | num: 00005 | Número inscripció: PG-001126 | places: 6 | estances: 3
+CAL RAFELÓ | SANT ISIDRE | num: 00011 | Número inscripció: PG-001711 | places: 8 | estances: 3
+*************************************
+* 03: Codi municipi -> establiments *
+*************************************
+Codi de municipi: 172039
+El Mas Fel | de Figueres | num: 00020 | Número inscripció: ATG-000209 | places: 15 | estances: 2
+Montori Rural | Vell de Rupià | num: s/n | Número inscripció: KG-000166 | places: 153 | estances: 51
+Sense especificar | Figueres | num: 11-12 | Número inscripció: HUTG-023016 | places: 0 | estances: 0
+Sense especificar | Comarcal | num: KM 252 | Número inscripció: HUTG-024807 | places: 0 | estances: 0
+Sense especificar | Canigó | num: 00016 | Número inscripció: HUTG-036122 | places: 0 | estances: 0
+Sense especificar | Torroella | num: s/n | Número inscripció: HUTG-039041 | places: 0 | estances: 0
+Sense especificar | Torroella | num: s/n | Número inscripció: HUTG-039042 | places: 0 | estances: 0
+Sense especificar | Racó | num: 00001 | Número inscripció: HUTG-053001 | places: 0 | estances: 0
+Modificar el número del carrer de l'adreça. | de la Marinada | num: 00000 | Número inscripció: HUTG-066465 | places: 6 | estances: 0
+CAN PAULÍ | MAJOR | num: 00026 | Número inscripció: HUTG-076254 | places: 9 | estances: 0
+Carrer Figueres, núm. 14-16 del municipi dUltramort | de Figueres | num: 00014 | Número inscripció: HUTG-077379 | places: 15 | estances: 0
+Sense especificar | Figueres | num: 00009 | Número inscripció: HUTG-077447 | places: 3 | estances: 0
+Sense especificar | del Canigó | num: 00000 | Número inscripció: HUTG-077449 | places: 9 | estances: 0
+Sense especificar | de Figueres | num: 00002 | Número inscripció: HUTG-079197 | places: 15 | estances: 0
+Sense especificar | Figueres | num: 00004 | Número inscripció: HUTG-079673 | places: 9 | estances: 0
+Sense especificar | ARRABAL | num: S/N | Número inscripció: HUTG-079906 | places: 13 | estances: 0
+Can Mató | Major | num: 00010 | Número inscripció: PG-000871 | places: 8 | estances: 4
+*************************************
+* 03: Codi municipi -> establiments *
+*************************************
+Codi de municipi: 171518
+Can padrosa | Sant Isidre | num: 0015C | Número inscripció: ATG-000251 | places: 8 | estances: 4
+Sense especificar | Tramuntana | num: 00008 | Número inscripció: HUTG-024680 | places: 0 | estances: 0
+Sense especificar | Siurana | num: 00005 | Número inscripció: HUTG-039347 | places: 0 | estances: 0
+Sense especificar | Plaça Vella | num: 00012 | Número inscripció: HUTG-046825 | places: 0 | estances: 0
+Sense especificar | SANT ISIDRE | num: 00015 | Número inscripció: HUTG-047667 | places: 0 | estances: 0
+Sense especificar | Camí Vell de Fortià | num: s/n | Número inscripció: HUTG-052666 | places: 0 | estances: 0
+Sense especificar | Mar | num: 00014 | Número inscripció: HUTG-056104 | places: 0 | estances: 0
+Sense especificar | Empordà | num: 00009 | Número inscripció: HUTG-063231 | places: 6 | estances: 0
+Sense especificar | de la Tramuntana | num: 00007 | Número inscripció: HUTG-069426 | places: 7 | estances: 0
+Sense especificar | de les Eres | num: 00001 | Número inscripció: HUTG-076662 | places: 8 | estances: 0
+Sense especificar | Sant Isidre | num: 00013 | Número inscripció: HUTG-077050 | places: 10 | estances: 0
+Sense especificar | Polígon 3, Parcel·la 187, Can Tomàs | num: s/n | Número inscripció: HUTG-079378 | places: 7 | estances: 0
+Can Padrosa | de Sant Isidre | num: 00015 | Número inscripció: PG-001238 | places: 15 | estances: 5
+*************************************
+* 03: Codi municipi -> establiments *
+*************************************
+Codi de municipi: 171485
+Càmping Riudarenes | Mallorquines-Hostalric | num: km 7 | Número inscripció: KG-000151 | places: 507 | estances: 169
+Can Torrelles de la Riba | Esparra | num: 00029 | Número inscripció: HUTG-010072 | places: 0 | estances: 0
+Espai Rural La Fàbrega | Mata-Serramagre | num: 00020 | Número inscripció: HUTG-021100 | places: 12 | estances: 4
+Sense especificar | Santa Coloma | num: 00017 | Número inscripció: HUTG-021872 | places: 0 | estances: 0
+Sense especificar | Esparra-Can Masferrer | num: 00038 | Número inscripció: HUTG-024976 | places: 0 | estances: 0
+Sense especificar | Serra Magre | num: 00006 | Número inscripció: HUTG-026569 | places: 0 | estances: 0
+Cal Oller | Diumenge | num: 00001 | Número inscripció: HUTG-027905 | places: 0 | estances: 0
+Sense especificar | Hortensies | num: 00020 | Número inscripció: HUTG-040532 | places: 0 | estances: 0
+Sense especificar | Pou | num: 00009 | Número inscripció: HUTG-049088 | places: 0 | estances: 0
+Sense especificar | Raval de l'Esparra | num: 00025 | Número inscripció: HUTG-057726 | places: 0 | estances: 0
+Sense especificar | de l' Esparra (Can Conill) | num: 00009 | Número inscripció: HUTG-062257 | places: 6 | estances: 0
+Sense especificar | de l' Esparra (Can Conill) | num: 00009 | Número inscripció: HUTG-062258 | places: 15 | estances: 0
+Sense especificar | del Clavell | num: 00009 | Número inscripció: HUTG-063235 | places: 2 | estances: 0
+Sense especificar | Mas Can Pinoi - Veïnat de l'Esparra | num: s/n | Número inscripció: HUTG-063657 | places: 15 | estances: 0
+Sense especificar | Sant Martí | num: 00023 | Número inscripció: HUTG-067652 | places: 6 | estances: 0
+CASA AISLADA EN URBANIZACIÓN FAN FORNACA | Colom | num: 00039 | Número inscripció: HUTG-074254 | places: 5 | estances: 0
+Sense especificar | Tórtora | num: 00053 | Número inscripció: HUTG-076375 | places: 12 | estances: 0
+Sense especificar | Castanyer | num: 00025 | Número inscripció: HUTG-076663 | places: 5 | estances: 0
+El Pigot | Arraval de l'Esparra (El Pigot) | num: 00014 | Número inscripció: HUTG-076831 | places: 9 | estances: 0
+MAS CAN FALQUÉS | de Santa Coloma | num: 00005 | Número inscripció: HUTG-077260 | places: 15 | estances: 0
+masia can ruscada | disseminat la riera | num: 00018 | Número inscripció: HUTG-077967 | places: 6 | estances: 0
+Casa | Lliris | num: 00021 | Número inscripció: HUTG-078719 | places: 7 | estances: 0
+Sense especificar | Esparra | num: 00005 | Número inscripció: HUTG-079526 | places: 11 | estances: 0
+Sense especificar | Argimont | num: 00177 | Número inscripció: HUTG-079647 | places: 15 | estances: 0
+Hostal Mallorquines | Les Mallorquines | num: 00013 | Número inscripció: HG-001493 | places: 30 | estances: 17
+Motel L'Entrada | Santa Coloma | num: s/n | Número inscripció: HG-002176 | places: 32 | estances: 19
+La Brasa | Santa Coloma de Farners | num: 00021 | Número inscripció: HG-002224 | places: 38 | estances: 20
+Can Fané | Mallorquines | num: 00017 | Número inscripció: HG-002310 | places: 15 | estances: 8
+Can Micos | Serra Magre | num: 00005 | Número inscripció: PG-000273 | places: 14 | estances: 7
+Can Rajoler | Serra Magre | num: 00014 | Número inscripció: PG-000417 | places: 15 | estances: 6
+Mas Can Salarichs | Riera | num: 00014 | Número inscripció: PG-000546 | places: 15 | estances: 6
+Cal Bellés Mas | de Camp Veïnat Serre Magre | num: 00019 | Número inscripció: PG-000698 | places: 13 | estances: 6
+Can Llonga | Major | num: 00010 | Número inscripció: PG-000877 | places: 8 | estances: 4
+La Casa Nova | La Riera | num: s/n | Número inscripció: PG-000901 | places: 14 | estances: 5
+*************************************
+* 03: Codi municipi -> establiments *
+*************************************
+Codi de municipi: 172235
+Sense especificar | Pere Serra | num: 00047 | Número inscripció: HUTG-013326 | places: 0 | estances: 0
+Mas Espelt | Mas Espelt | num: s/n | Número inscripció: HUTG-016544 | places: 12 | estances: 6
+Sense especificar | Oïdium | num: 00007 | Número inscripció: HUTG-024329 | places: 0 | estances: 0
+Sense especificar | Quermançó | num: 00101 | Número inscripció: HUTG-028483 | places: 0 | estances: 0
+Sense especificar | Figueres | num: 00011 | Número inscripció: HUTG-035852 | places: 0 | estances: 0
+Sense especificar | Francesc Macià | num: 00048 | Número inscripció: HUTG-046864 | places: 0 | estances: 0
+Sense especificar | Farigola | num: 00002 | Número inscripció: HUTG-054943 | places: 0 | estances: 0
+Sense especificar | de Sant Pere de Roda | num: 00017 | Número inscripció: HUTG-063751 | places: 4 | estances: 0
+Sense especificar | DEL PI | num: 00003 | Número inscripció: HUTG-076421 | places: 15 | estances: 0
+Sense especificar | de Mendizábal | num: 00008 | Número inscripció: HUTG-076728 | places: 7 | estances: 0
+Sense especificar | Senglar | num: 00003 | Número inscripció: HUTG-079453 | places: 2 | estances: 0
+Hostal Xavi | Roses | num: 00017 | Número inscripció: HG-001502 | places: 63 | estances: 34
+MAS GELAMÀ | DE L'ESTACIÓ | num: 00006 | Número inscripció: PG-000641 | places: 8 | estances: 3
+*************************************
+* 03: Codi municipi -> establiments *
+*************************************
+Codi de municipi: 171077
+Els Vents | El Carol | num: 00002 | Número inscripció: ATG-000108 | places: 8 | estances: 2
+Les Barnedes | Molló-França | num: s/n | Número inscripció: ATG-000109 | places: 22 | estances: 5
+Mas La Costa | Ve¿nat de Moixons, Mas la Costa | num: 00009 | Número inscripció: ATG-000227 | places: 11 | estances: 3
+Apartaments Turistics | Major | num: 00009 | Número inscripció: ATG-000273 | places: 18 | estances: 6
+Sense especificar | Fabert | num: 00010 | Número inscripció: HUTG-007802 | places: 0 | estances: 0
+Sense especificar | Fabert | num: 00010 | Número inscripció: HUTG-008067 | places: 0 | estances: 0
+Sense especificar | Solà Morales | num: 00016 | Número inscripció: HUTG-008068 | places: 0 | estances: 0
+Sense especificar | Ginestosa | num: 0032A | Número inscripció: HUTG-016911 | places: 0 | estances: 0
+Sense especificar | Bastiments | num: 00001 | Número inscripció: HUTG-028836 | places: 0 | estances: 0
+Sense especificar | De la Guaridiola | num: 00045 | Número inscripció: HUTG-031740 | places: 0 | estances: 0
+Sense especificar | Veïnat del Riberal | num: 00004 | Número inscripció: HUTG-033780 | places: 0 | estances: 0
+Sense especificar | Veïnat de Ginestosa | num: 00027 | Número inscripció: HUTG-034698 | places: 0 | estances: 0
+Sense especificar | Comanegra | num: 00002 | Número inscripció: HUTG-041470 | places: 0 | estances: 0
+Sense especificar | Bastiments | num: 00002 | Número inscripció: HUTG-044639 | places: 0 | estances: 0
+Sense especificar | Amunt | num: 00005 | Número inscripció: HUTG-049934 | places: 0 | estances: 0
+Sense especificar | Major | num: 00007 | Número inscripció: HUTG-050253 | places: 0 | estances: 0
+Sense especificar | ILLA | num: 00005 | Número inscripció: HUTG-055050 | places: 0 | estances: 0
+Sense especificar | ILLA | num: 00005 | Número inscripció: HUTG-055051 | places: 0 | estances: 0
+Mas Sitjar | Veïnat de Favars | num: 00019 | Número inscripció: HUTG-055628 | places: 0 | estances: 0
+Sense especificar | de Favars | num: 0001B | Número inscripció: HUTG-059733 | places: 6 | estances: 0
+Sense especificar | Sant Sebastià | num: 00001 | Número inscripció: HUTG-061944 | places: 2 | estances: 0
+Sense especificar | Veïnat de Ginestosa | num: 00015 | Número inscripció: HUTG-061945 | places: 9 | estances: 0
+Sense especificar | de Sant Sebastià | num: 00001 | Número inscripció: HUTG-062191 | places: 2 | estances: 0
+Sense especificar | Sant Sebastià | num: 00001 | Número inscripció: HUTG-062383 | places: 2 | estances: 0
+Sense especificar | Sant Sebastià | num: 00001 | Número inscripció: HUTG-062384 | places: 2 | estances: 0
+Sense especificar | d'Avall | num: 00009 | Número inscripció: HUTG-062388 | places: 5 | estances: 0
+Sense especificar | AVALL | num: 00009 | Número inscripció: HUTG-062390 | places: 5 | estances: 0
+Sense especificar | AVALL | num: 00009 | Número inscripció: HUTG-062392 | places: 5 | estances: 0
+Cabanya Moreres | Espinavell Rural | num: 00001 | Número inscripció: HUTG-068005 | places: 7 | estances: 0
+Sense especificar | TER | num: 00004 | Número inscripció: HUTG-071691 | places: 6 | estances: 0
+Sense especificar | VEÏNAT DE FAVARS | num: 00016 | Número inscripció: HUTG-071695 | places: 5 | estances: 0
+Sense especificar | del Ter | num: 00004 | Número inscripció: HUTG-071730 | places: 6 | estances: 0
+Sense especificar | del Ter | num: 00004 | Número inscripció: HUTG-071873 | places: 6 | estances: 0
+EL PETIT OASI DE MOLLO | Sant Sebastià | num: 00001 | Número inscripció: HUTG-074249 | places: 3 | estances: 0
+CAN GENETA | DE FRANÇA | num: 00007 | Número inscripció: HUTG-076502 | places: 3 | estances: 0
+HOTEL RESTAURANT CALITXÓ | Sant Sebastià, 28 / Passatge del Serrat, s/n | num: s/n | Número inscripció: HG-002007 | places: 56 | estances: 26
+El Quintà | Espinavell | num: s/n | Número inscripció: HG-002209 | places: 24 | estances: 13
+casa rous | Serra Cavallerra | num: 00002 | Número inscripció: LLG-000015 | places: 4 | estances: 3
+Can Illa | C-38 | num: 00022 | Número inscripció: PG-000049 | places: 15 | estances: 6
+Can Torrent | Ginestosa | num: s/n | Número inscripció: PG-000098 | places: 8 | estances: 4
+La Costa | La Costa de Mollo | num: 00009 | Número inscripció: PG-000517 | places: 15 | estances: 6
+Can Pletis | Grells | num: 00001 | Número inscripció: PG-000835 | places: 14 | estances: 6
+CABANYA DE CAN JORDI | Avall | num: 00008 | Número inscripció: PG-001083 | places: 4 | estances: 2
+CASA TAPIOLAS | Guardiola | num: 00012 | Número inscripció: PG-001335 | places: 20 | estances: 5
+Les Planes | del costabona | num: 0002D | Número inscripció: PG-001543 | places: 5 | estances: 3
+*************************************
+* 04: Municipi amb mes establiments *
+*************************************
+Barcelonès | Barcelona => 11418
+Tarragonès | Salou => 7207
+Alt Empordà | Roses => 5401
+Baix Camp | Cambrils => 3807
+Selva | Lloret de Mar => 3308
+Baix Empordà | Castell d'Aro, Platja d'Aro i s'Agaró => 2958
+Baix Ebre | Ametlla de Mar, l' => 1805
+Garraf | Sitges => 1778
+Baix Penedès | Calafell => 1724
+Aran | Naut Aran => 1323
+Maresme | Pineda de Mar => 870
+Gironès | Girona => 827
+Montsià | Ràpita, la => 694
+Alta Ribagorça | Vall de Boí, la => 492
+Baix Llobregat | Castelldefels => 469
+Cerdanya | Puigcerdà => 324
+Ripollès | Camprodon => 201
+Pallars Sobirà | Esterri d'Àneu => 200
+Vallès Occidental | Terrassa => 190
+Bages | Manresa => 174
+Garrotxa | Olot => 133
+Segrià | Lleida => 122
+Pla de l'Estany | Banyoles => 115
+Pallars Jussà | Tremp => 106
+Priorat | Cornudella de Montsant => 75
+Alt Urgell | Seu d'Urgell, la => 70
+Osona | Vic => 65
+Conca de Barberà | Montblanc => 63
+Terra Alta | Horta de Sant Joan => 58
+Solsonès | Solsona => 58
+Anoia | Igualada => 52
+Noguera | Àger => 51
+Berguedà | Bagà => 46
+Vallès Oriental | Vallromanes => 42
+Alt Camp | Aiguamúrcia => 39
+Alt Penedès | Olèrdola => 36
+Ribera d'Ebre | Rasquera => 33
+Urgell | Tàrrega => 33
+Moianès | Moià => 23
+Lluçanès | Perafita => 17
+Segarra | Cervera => 16
+Garrigues | Borges Blanques, les => 14
+Pla d'Urgell | Mollerussa => 7
