@@ -17,14 +17,14 @@ void mostrarTitol(const string &titol) {
 
 void mostrarMenu() {
     // pre: cert
-    // post: s'ha mostrat el menú per cerr
-    cerr << endl;
-    cerr << "01: Llegir dades" << endl;
-    cerr << "02: Codi comarca -> municipis" << endl;
-    cerr << "03: Codi municipi -> establiments" << endl;
-    cerr << "04: Municipi amb mes establiments" << endl;
-    cerr << "0: Acabar" << endl;
-    cerr << "Opcio: ";
+    // post: s'ha mostrat el menú per cout
+    cout << endl;
+    cout << "01: Llegir dades" << endl;
+    cout << "02: Codi comarca -> municipis" << endl;
+    cout << "03: Codi municipi -> establiments" << endl;
+    cout << "04: Municipi amb mes establiments" << endl;
+    cout << "0: Acabar" << endl;
+    cout << "Opcio: ";
 }
 
 void opcioLlegirDades(Establiments &establiments) {
@@ -63,7 +63,7 @@ int main() {
             case 2: opcioMunicipisPerComarca(establiments); break;
             case 3: opcioEstablimentsPerMunicipi(establiments); break;
             case 4: opcioMaximMunicipi(establiments); break;
-            default: cerr << "Opcio incorrecta" << endl;
+            default: cout << "Opcio incorrecta" << endl;
         }
         mostrarMenu();
         cin >> opcio;

@@ -36,7 +36,7 @@ public:
 
     void afegirEstabliment(const Establiment &e);
     // pre: cert
-    // post: e s'ha afegit al final de la llista d'establiments
+    // post: e s'ha afegit al final de la llista d'establiments amb un pushback
 
 private:
     string a_codi;                    // Codi Municipi (IDESCAT)

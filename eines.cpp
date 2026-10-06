@@ -16,7 +16,7 @@ vector<string> tokens(const string &s, char separador, bool cometes) {
 
 string token(const string &s, char separador, bool cometes, long &primer, long &ultim) {
     string t;
-
+    
     if (!cometes || s[primer] != '"') { // No volem tenir en compte les " o no comença per "
         while(s[primer]==' ' && primer<s.length()) // ens  mengem els espais inicials si no hi ha cometes
             primer++;
