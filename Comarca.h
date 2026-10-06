@@ -8,7 +8,7 @@
 
 using namespace std;
 
-/// Una comarca amb el vector dels seus municipis.
+/// Una comarca amb un vector on estan els seus municipis.
 class Comarca {
 public:
     Comarca();
