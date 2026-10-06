@@ -28,19 +28,19 @@ typedef vector<MaximMunicipiResult> MaximMunicipiResults;
 
 class Establiments {
 public:
-    // pre: --
+    // pre: cert
     // post: TODO
     size_t llegirDades(const string &path);
 
-    // pre: --
+    // pre: cert
     // post: TODO
     vector<MunicipiResult> municipisPerComarca(int codiComarca) const;
 
-    // pre: --
+    // pre: cert
     // post: TODO
     list<Establiment> establimentsPerMunicipi(const string &codiMunicipi) const;
 
-    // pre: --
+    // pre: cert
     // post: TODO
     MaximMunicipiResults maximMunicipi() const;
 

@@ -9,7 +9,7 @@ using namespace std;
 /// Només guardem els camps que necessitem per mostrar-lo a l'opció 03.
 class Establiment {
 public:
-    // pre: --
+    // pre: cert
     // post: establiment buit (cadenes buides, places i estances a 0)
     Establiment();
 
@@ -18,27 +18,27 @@ public:
     Establiment(const string &nom, const string &carrer, const string &numero,
                 const string &numInscripcio, int places, int estances);
 
-    // pre: --
+    // pre: cert
     // post: retorna el rètol (nom) de l'establiment
     string nom() const;
 
-    // pre: --
+    // pre: cert
     // post: retorna el nom de la via (carrer)
     string carrer() const;
 
-    // pre: --
+    // pre: cert
     // post: retorna el número de la via
     string numero() const;
 
-    // pre: --
+    // pre: cert
     // post: retorna el número d'inscripció
     string numInscripcio() const;
 
-    // pre: --
+    // pre: cert
     // post: retorna el total de places
     int places() const;
 
-    // pre: --
+    // pre: cert
     // post: retorna el total d'estances
     int estances() const;
 

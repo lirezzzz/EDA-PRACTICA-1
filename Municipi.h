@@ -11,7 +11,7 @@ using namespace std;
 /// en l'ordre relatiu en què apareixen al fitxer CSV.
 class Municipi {
 public:
-    // pre: --
+    // pre: cert
     // post: municipi buit, sense establiments
     Municipi();
 
@@ -19,23 +19,23 @@ public:
     // post: municipi amb el codi i nom indicats i sense establiments
     Municipi(const string &codi, const string &nom);
 
-    // pre: --
+    // pre: cert
     // post: retorna el codi IDESCAT del municipi
     string codi() const;
 
-    // pre: --
+    // pre: cert
     // post: retorna el nom del municipi
     string nom() const;
 
-    // pre: --
+    // pre: cert
     // post: retorna el nombre d'establiments del municipi
     size_t nEstabliments() const;
 
-    // pre: --
+    // pre: cert
     // post: retorna la llista d'establiments en l'ordre del fitxer
     const list<Establiment> &establiments() const;
 
-    // pre: --
+    // pre: cert
     // post: e s'ha afegit al final de la llista d'establiments
     void afegirEstabliment(const Establiment &e);
 

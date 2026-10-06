@@ -11,7 +11,7 @@ using namespace std;
 /// Una comarca amb el vector dels seus municipis.
 class Comarca {
 public:
-    // pre: --
+    // pre: cert
     // post: comarca buida (codi 0, sense nom ni municipis)
     Comarca();
 
@@ -19,19 +19,19 @@ public:
     // post: comarca amb el codi i nom indicats i sense municipis
     Comarca(int codi, const string &nom);
 
-    // pre: --
+    // pre: cert
     // post: retorna el codi IDESCAT de la comarca
     int codi() const;
 
-    // pre: --
+    // pre: cert
     // post: retorna el nom de la comarca
     string nom() const;
 
-    // pre: --
+    // pre: cert
     // post: retorna cert si la comarca no té cap municipi
     bool buida() const;
 
-    // pre: --
+    // pre: cert
     // post: retorna els municipis de la comarca
     const vector<Municipi> &municipis() const;
 

@@ -6,7 +6,7 @@
 
 using namespace std;
 
-// pre: --
+// pre: cert
 // post: s'ha mostrat per cout el títol emmarcat amb asteriscs
 void mostrarTitol(const string &titol) {
     string linia(titol.length() + 4, '*');
@@ -15,7 +15,7 @@ void mostrarTitol(const string &titol) {
     cout << linia << endl;
 }
 
-// pre: --
+// pre: cert
 // post: s'ha mostrat el menú per cerr
 void mostrarMenu() {
     cerr << endl;
@@ -27,25 +27,25 @@ void mostrarMenu() {
     cerr << "Opcio: ";
 }
 
-// pre: --
+// pre: cert
 // post: llegeix el path del fitxer CSV, el carrega a establiments i mostra el nombre de línies llegides
 void opcioLlegirDades(Establiments &establiments) {
     // TODO
 }
 
-// pre: --
+// pre: cert
 // post: llegeix un codi de comarca i mostra els seus municipis amb el nombre d'establiments
 void opcioMunicipisPerComarca(const Establiments &establiments) {
     // TODO
 }
 
-// pre: --
+// pre: cert
 // post: llegeix un codi de municipi i mostra els seus establiments
 void opcioEstablimentsPerMunicipi(const Establiments &establiments) {
     // TODO
 }
 
-// pre: --
+// pre: cert
 // post: mostra, per cada comarca, el municipi amb més establiments
 void opcioMaximMunicipi(const Establiments &establiments) {
     // TODO
