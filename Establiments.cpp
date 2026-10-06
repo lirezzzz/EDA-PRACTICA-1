@@ -26,44 +26,30 @@ static int textANumero(const string &s) {
 
 size_t Establiments::llegirDades(const string &path) {
     a_comarques.clear();
-    a_comarques.resize(44);
+    a_comarques.resize(44);         // una posició per cada codi de comarca (1..43)
 
-    size_t n = 0;
     ifstream f(path);
     if (f.fail()) return 0;
 
+    size_t n = 0;
     string linia;
-    getline(f, linia); // capçalera
-    getline(f, linia);
-    while (!f.eof()) {
-        string numInscripcio, retol, nomVia, numero, municipi, codiMunicipi, comarca;
-        int codiComarca = 0, places = 0, estances = 0;
+    getline(f, linia);              // capçalera: la descartem
 
-        long primer = 0, ultim = 0;
-        int col = 0;
-        while (ultim != string::npos) {
-            string t = token(linia, ',', true, primer, ultim);
-            if (col == COL_NUM_INSCRIPCIO) numInscripcio = t;
-            else if (col == COL_RETOL) retol = t;
-            else if (col == COL_NOM_VIA) nomVia = t;
-            else if (col == COL_NUMERO) numero = t;
-            else if (col == COL_MUNICIPI) municipi = t;
-            else if (col == COL_CODI_MUNICIPI) codiMunicipi = t;
-            else if (col == COL_COMARCA) comarca = t;
-            else if (col == COL_CODI_COMARCA) codiComarca = textANumero(t);
-            else if (col == COL_PLACES) places = textANumero(t);
-            else if (col == COL_ESTANCES) estances = textANumero(t);
-            col++;
-        }
+    while (getline(f, linia)) {     // mentre es pugui llegir una línia de dades
+        vector<string> camps = tokens(linia, ',', true);
+        if (camps.size() != 33) continue;   // línia buida o mal formada
 
-        if (col == 33) {
-            Establiment e(retol, nomVia, numero, numInscripcio, places, estances);
-            if (a_comarques[codiComarca].codi() == 0)
-                a_comarques[codiComarca] = Comarca(codiComarca, comarca);
-            a_comarques[codiComarca].afegirEstabliment(codiMunicipi, municipi, e);
-            n++;
-        }
-        getline(f, linia);
+        Establiment e(camps[COL_RETOL], camps[COL_NOM_VIA], camps[COL_NUMERO],
+                      camps[COL_NUM_INSCRIPCIO],
+                      textANumero(camps[COL_PLACES]), textANumero(camps[COL_ESTANCES]));
+
+        int codiComarca = textANumero(camps[COL_CODI_COMARCA]);
+        Comarca &comarca = a_comarques[codiComarca];        // accés directe O(1)
+        if (comarca.codi() == 0)                            // primer cop que surt
+            comarca = Comarca(codiComarca, camps[COL_COMARCA]);
+
+        comarca.afegirEstabliment(camps[COL_CODI_MUNICIPI], camps[COL_MUNICIPI], e);
+        n++;
     }
     return n;
 }
