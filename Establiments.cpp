@@ -34,22 +34,23 @@ size_t Establiments::llegirDades(const string &path) {
     size_t n = 0;
     string linia;
     getline(f, linia);              // capçalera: la descartem
-
-    while (getline(f, linia)) {     // mentre es pugui llegir una línia de dades
+    getline(f, linia);              // primera línia de dades
+    while (!f.eof()) {
         vector<string> camps = tokens(linia, ',', true);
-        if (camps.size() != 33) continue;   // línia buida o mal formada
+        if (camps.size() == 33) {   // descartem línies buides o mal formades
+            Establiment e(camps[COL_RETOL], camps[COL_NOM_VIA], camps[COL_NUMERO],
+                          camps[COL_NUM_INSCRIPCIO],
+                          textANumero(camps[COL_PLACES]), textANumero(camps[COL_ESTANCES]));
 
-        Establiment e(camps[COL_RETOL], camps[COL_NOM_VIA], camps[COL_NUMERO],
-                      camps[COL_NUM_INSCRIPCIO],
-                      textANumero(camps[COL_PLACES]), textANumero(camps[COL_ESTANCES]));
+            int codiComarca = textANumero(camps[COL_CODI_COMARCA]);
+            Comarca &comarca = a_comarques[codiComarca];    // accés directe O(1)
+            if (comarca.codi() == 0)                        // primer cop que surt
+                comarca = Comarca(codiComarca, camps[COL_COMARCA]);
 
-        int codiComarca = textANumero(camps[COL_CODI_COMARCA]);
-        Comarca &comarca = a_comarques[codiComarca];        // accés directe O(1)
-        if (comarca.codi() == 0)                            // primer cop que surt
-            comarca = Comarca(codiComarca, camps[COL_COMARCA]);
-
-        comarca.afegirEstabliment(camps[COL_CODI_MUNICIPI], camps[COL_MUNICIPI], e);
-        n++;
+            comarca.afegirEstabliment(camps[COL_CODI_MUNICIPI], camps[COL_MUNICIPI], e);
+            n++;
+        }
+        getline(f, linia);          // següent línia
     }
     return n;
 }
