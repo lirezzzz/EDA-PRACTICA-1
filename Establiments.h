@@ -5,8 +5,6 @@
 #include <vector>
 #include <list>
 #include "Comarca.h"
-#include "Municipi.h"
-#include "Establiment.h"
 
 using namespace std;
 
