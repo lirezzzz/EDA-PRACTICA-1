@@ -30,7 +30,11 @@ void mostrarMenu() {
 void opcioLlegirDades(Establiments &establiments) {
     // pre: cert
     // post: llegeix el path del fitxer CSV, el carrega a establiments i mostra el nombre de línies llegides
-    // TODO
+    string path;
+    cin >> path;
+    size_t n = establiments.llegirDades(path);
+    mostrarTitol("01: Llegir dades");
+    cout << "Numero de linies: " << n << endl;
 }
 
 void opcioMunicipisPerComarca(const Establiments &establiments) {

@@ -14,11 +14,58 @@ const int COL_CODI_COMARCA = 16;
 const int COL_PLACES = 24;
 const int COL_ESTANCES = 25;
 
+// pre: cert
+// post: retorna el número format pels dígits de s (ignora qualsevol altre caràcter); si no n'hi ha cap, retorna 0
+static int textANumero(const string &s) {
+    int n = 0;
+    for (char c : s)
+        if (c >= '0' && c <= '9')
+            n = n * 10 + (c - '0');
+    return n;
+}
+
 size_t Establiments::llegirDades(const string &path) {
-    // TODO: esborrar les dades anteriors, obrir el fitxer, saltar la capçalera,
-    //       i per cada línia fer tokens(linia, ',', true) i guardar l'establiment.
-    //       Compte: places i estances poden venir buides (valen 0).
-    return 0;
+    a_comarques.clear();
+    a_comarques.resize(44);
+
+    size_t n = 0;
+    ifstream f(path);
+    if (f.fail()) return 0;
+
+    string linia;
+    getline(f, linia); // capçalera
+    getline(f, linia);
+    while (!f.eof()) {
+        string numInscripcio, retol, nomVia, numero, municipi, codiMunicipi, comarca;
+        int codiComarca = 0, places = 0, estances = 0;
+
+        long primer = 0, ultim = 0;
+        int col = 0;
+        while (ultim != string::npos) {
+            string t = token(linia, ',', true, primer, ultim);
+            if (col == COL_NUM_INSCRIPCIO) numInscripcio = t;
+            else if (col == COL_RETOL) retol = t;
+            else if (col == COL_NOM_VIA) nomVia = t;
+            else if (col == COL_NUMERO) numero = t;
+            else if (col == COL_MUNICIPI) municipi = t;
+            else if (col == COL_CODI_MUNICIPI) codiMunicipi = t;
+            else if (col == COL_COMARCA) comarca = t;
+            else if (col == COL_CODI_COMARCA) codiComarca = textANumero(t);
+            else if (col == COL_PLACES) places = textANumero(t);
+            else if (col == COL_ESTANCES) estances = textANumero(t);
+            col++;
+        }
+
+        if (col == 33) {
+            Establiment e(retol, nomVia, numero, numInscripcio, places, estances);
+            if (a_comarques[codiComarca].codi() == 0)
+                a_comarques[codiComarca] = Comarca(codiComarca, comarca);
+            a_comarques[codiComarca].afegirEstabliment(codiMunicipi, municipi, e);
+            n++;
+        }
+        getline(f, linia);
+    }
+    return n;
 }
 
 vector<MunicipiResult> Establiments::municipisPerComarca(int codiComarca) const {
