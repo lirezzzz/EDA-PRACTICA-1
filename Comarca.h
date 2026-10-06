@@ -21,7 +21,7 @@ public:
 
     int codi() const;
     // pre: cert
-    // post: retorna el codi IDESCAT de la comarca
+    // post: retorna el codi idescat de la comarca
 
     string nom() const;
     // pre: cert
@@ -36,18 +36,17 @@ public:
     // post: retorna els municipis de la comarca
 
     int cercaDicotomica(const string &codiMunicipi) const;
-    // pre: els municipis estan ordenats per codi idescat (ordre de string)
+    // pre: els municipis estan ordenats per codi idescat (ordre de string de menor a major basicament 0<3 en format string)
     // post: retorna la posició de codiMunicipi dins els municipis, o -1 si no hi és
 
     bool existeix(const string &codiMunicipi) const;
-    // pre: els municipis estan ordenats per codi idescat (ordre de string)
+    // pre: els municipis estan ordenats per codi idescat (ordre de string, que funciona com hem especificat abans a la cerca dicotomica)
     // post: retorna cert si la comarca té un municipi amb codi codiMunicipi
 
     void afegirEstabliment(const string &codiMunicipi, const string &nomMunicipi,
                            const Establiment &e);
     // pre: el municipi codiMunicipi pertany a aquesta comarca
-    // post: e s'ha afegit al final dels establiments del municipi codiMunicipi;
-    //       si el municipi no existia, s'ha creat amb el nom nomMunicipi
+    // post: e s'ha afegit al final dels establiments del municipi codiMunicip. si el municipi no existia, s'ha creat amb el nom nomMunicipi
 
 private:
     int a_codi;                  // Codi Comarca (IDESCAT)
