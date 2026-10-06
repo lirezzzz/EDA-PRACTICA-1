@@ -1,3 +1,4 @@
+#include <cctype>
 #include <iostream>
 #include <string>
 #include <vector>
@@ -40,19 +41,41 @@ void opcioLlegirDades(Establiments &establiments) {
 void opcioMunicipisPerComarca(const Establiments &establiments) {
     // pre: cert
     // post: llegeix un codi de comarca i mostra els seus municipis amb el nombre d'establiments
-    // TODO
+    int codi;
+    cin >> codi;
+    mostrarTitol("02: Codi comarca -> municipis");
+    cout << "Codi de comarca: " << codi << endl;
+    for (const MunicipiResult &m : establiments.municipisPerComarca(codi))
+        cout << m.nom << " => " << m.nEstabliments << endl;
+}
+
+string formatNumero(const string &numero) {
+    // pre: cert
+    // post: retorna numero; si comença per dígit, s'omple amb zeros a l'esquerra fins a 5 caràcters
+    if (numero.empty() || !isdigit((unsigned char)numero[0]) || numero.length() >= 5)
+        return numero;
+    return string(5 - numero.length(), '0') + numero;
 }
 
 void opcioEstablimentsPerMunicipi(const Establiments &establiments) {
     // pre: cert
     // post: llegeix un codi de municipi i mostra els seus establiments
-    // TODO
+    string codi;
+    cin >> codi;
+    mostrarTitol("03: Codi municipi -> establiments");
+    cout << "Codi de municipi: " << codi << endl;
+    for (const Establiment &e : establiments.establimentsPerMunicipi(codi))
+        cout << e.nom() << " | " << e.carrer() << " | num: " << formatNumero(e.numero())
+             << " | Número inscripció: " << e.numInscripcio()
+             << " | places: " << e.places() << " | estances: " << e.estances() << endl;
 }
 
 void opcioMaximMunicipi(const Establiments &establiments) {
     // pre: cert
     // post: mostra, per cada comarca, el municipi amb més establiments
-    // TODO
+    mostrarTitol("04: Municipi amb mes establiments");
+    for (const MaximMunicipiResult &r : establiments.maximMunicipi())
+        cout << r.comarca << " | " << r.municipi << " => " << r.nEstabliments << endl;
 }
 
 int main() {
