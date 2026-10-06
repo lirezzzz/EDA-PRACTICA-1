@@ -4,17 +4,23 @@ Municipi::Municipi() {}
 
 Municipi::Municipi(const string &codi, const string &nom) : a_codi(codi), a_nom(nom) {}
 
-string Municipi::codi() const { return a_codi; }
-
-string Municipi::nom() const { return a_nom; }
-
-size_t Municipi::nEstabliments() const {
-    // TODO
-    return 0;
+string Municipi::codi() const { 
+    return a_codi; 
 }
 
-const list<Establiment> &Municipi::establiments() const { return a_establiments; }
+string Municipi::nom() const { 
+    return a_nom; 
+}
+
+size_t Municipi::nEstabliments() const {
+    return a_establiments.size();
+}
+
+const list<Establiment> &Municipi::establiments() const { 
+    return a_establiments; 
+}
 
 void Municipi::afegirEstabliment(const Establiment &e) {
-    // TODO
+    a_establiments.push_back(e);
+    
 }

@@ -6,18 +6,18 @@
 
 using namespace std;
 
-// pre: cert
-// post: s'ha mostrat per cout el títol emmarcat amb asteriscs
 void mostrarTitol(const string &titol) {
+    // pre: cert
+    // post: s'ha mostrat per cout el títol emmarcat amb asteriscs
     string linia(titol.length() + 4, '*');
     cout << linia << endl;
     cout << "* " << titol << " *" << endl;
     cout << linia << endl;
 }
 
-// pre: cert
-// post: s'ha mostrat el menú per cerr
 void mostrarMenu() {
+    // pre: cert
+    // post: s'ha mostrat el menú per cerr
     cerr << endl;
     cerr << "01: Llegir dades" << endl;
     cerr << "02: Codi comarca -> municipis" << endl;
@@ -27,27 +27,27 @@ void mostrarMenu() {
     cerr << "Opcio: ";
 }
 
-// pre: cert
-// post: llegeix el path del fitxer CSV, el carrega a establiments i mostra el nombre de línies llegides
 void opcioLlegirDades(Establiments &establiments) {
+    // pre: cert
+    // post: llegeix el path del fitxer CSV, el carrega a establiments i mostra el nombre de línies llegides
     // TODO
 }
 
-// pre: cert
-// post: llegeix un codi de comarca i mostra els seus municipis amb el nombre d'establiments
 void opcioMunicipisPerComarca(const Establiments &establiments) {
+    // pre: cert
+    // post: llegeix un codi de comarca i mostra els seus municipis amb el nombre d'establiments
     // TODO
 }
 
-// pre: cert
-// post: llegeix un codi de municipi i mostra els seus establiments
 void opcioEstablimentsPerMunicipi(const Establiments &establiments) {
+    // pre: cert
+    // post: llegeix un codi de municipi i mostra els seus establiments
     // TODO
 }
 
-// pre: cert
-// post: mostra, per cada comarca, el municipi amb més establiments
 void opcioMaximMunicipi(const Establiments &establiments) {
+    // pre: cert
+    // post: mostra, per cada comarca, el municipi amb més establiments
     // TODO
 }
 

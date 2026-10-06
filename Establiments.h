@@ -26,21 +26,21 @@ typedef vector<MaximMunicipiResult> MaximMunicipiResults;
 
 class Establiments {
 public:
-    // pre: cert
-    // post: TODO
     size_t llegirDades(const string &path);
-
     // pre: cert
     // post: TODO
+
     vector<MunicipiResult> municipisPerComarca(int codiComarca) const;
-
     // pre: cert
     // post: TODO
+
     list<Establiment> establimentsPerMunicipi(const string &codiMunicipi) const;
-
     // pre: cert
     // post: TODO
+
     MaximMunicipiResults maximMunicipi() const;
+    // pre: cert
+    // post: TODO
 
 private:
     vector<Comarca> a_comarques; // cada comarca conté els seus municipis

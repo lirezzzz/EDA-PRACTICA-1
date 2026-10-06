@@ -7,14 +7,26 @@ Establiment::Establiment(const string &nom, const string &carrer, const string &
     : a_nom(nom), a_carrer(carrer), a_numero(numero),
       a_numInscripcio(numInscripcio), a_places(places), a_estances(estances) {}
 
-string Establiment::nom() const { return a_nom; }
+string Establiment::nom() const {
+    return a_nom;
+}
 
-string Establiment::carrer() const { return a_carrer; }
+string Establiment::carrer() const {
+    return a_carrer;
+}
 
-string Establiment::numero() const { return a_numero; }
+string Establiment::numero() const {
+    return a_numero;
+}
 
-string Establiment::numInscripcio() const { return a_numInscripcio; }
+string Establiment::numInscripcio() const {
+    return a_numInscripcio;
+}
 
-int Establiment::places() const { return a_places; }
+int Establiment::places() const {
+    return a_places;
+}
 
-int Establiment::estances() const { return a_estances; }
+int Establiment::estances() const {
+    return a_estances;
+}
