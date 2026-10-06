@@ -13,10 +13,10 @@ class Comarca {
 public:
     Comarca();
     // pre: cert
-    // post: comarca buida (codi 0, sense nom ni municipis)
+    // post: comarca buida (codi 0, sense nom ni cap municipi)
 
     Comarca(int codi, const string &nom);
-    // pre: codi és el codi IDESCAT de la comarca
+    // pre: codi és el codi idescat de la comarca
     // post: comarca amb el codi i nom indicats i sense municipis
 
     int codi() const;
@@ -34,6 +34,14 @@ public:
     const vector<Municipi> &municipis() const;
     // pre: cert
     // post: retorna els municipis de la comarca
+
+    int cercaDicotomica(const string &codiMunicipi) const;
+    // pre: els municipis estan ordenats per codi idescat (ordre de string)
+    // post: retorna la posició de codiMunicipi dins els municipis, o -1 si no hi és
+
+    bool existeix(const string &codiMunicipi) const;
+    // pre: els municipis estan ordenats per codi idescat (ordre de string)
+    // post: retorna cert si la comarca té un municipi amb codi codiMunicipi
 
     void afegirEstabliment(const string &codiMunicipi, const string &nomMunicipi,
                            const Establiment &e);
