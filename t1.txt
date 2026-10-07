@@ -1,5 +1,5 @@
 01
-/u/prof/dfiguls/Public/establimentsCurt.csv
+establimentsCurt.csv
 02
 13
 02

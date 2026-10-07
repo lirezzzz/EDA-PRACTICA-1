@@ -29,13 +29,7 @@ Execucio d'un joc de proves (nomes es compara cout; cerr va a /dev/null):
 ----------------
 Cada fitxer tN.txt simula la interaccio d'un usuari amb el programa (conte
 tot el que l'usuari escriuria pel teclat) i te la seva sortida esperada a
-tN_out.txt. Els fitxers proves_*.csv son CSV petits fets per nosaltres amb
-el mateix format que el del professor (capçalera + 33 columnes, separador
-coma i camps entre cometes), pensats per provar casos concrets que el
-fitxer real no prova o que costa trobar-hi.
-
-Hem seguit la idea de provar primer l'escenari normal (t1 i t2) i despres
-escenaris poc habituals pero possibles (t3 i t4).
+tN_out.txt. Els dos fitxers CSV que fan servir son els del professor.
 
 t1.txt - ESCENARI NORMAL AMB EL FITXER CURT DEL PROFESSOR
   Fitxer: /u/prof/dfiguls/Public/establimentsCurt.csv (225 files)
@@ -70,38 +64,6 @@ t2.txt - ESCENARI NORMAL AMB EL FITXER GRAN DEL PROFESSOR
       Mollerussa), igual que a la sortida del professor.
   Per que: es l'escenari real de la practica, i el que posa a prova
   l'eficiencia de l'estructura.
-
-t3.txt - SENSE DADES: CONSULTES AMB L'ESTRUCTURA BUIDA
-  Fitxers: no_existeix.csv (no existeix) i proves_buit.csv (nomes capçalera)
-  Que fa:
-    - 02, 03 i 04 ABANS de llegir cap fitxer: el vector de comarques encara
-      es buit; el programa no pot accedir fora del vector ni petar.
-    - Opcio 07, que no existeix: no ha de mostrar res per cout (el missatge
-      d'error va per cerr) i el programa ha de continuar.
-    - 01 amb un fitxer que no existeix: ha de dir 0 linies.
-    - 01 amb un fitxer que nomes te la capçalera: tambe 0 linies (la
-      capçalera no compta com a dada).
-    - 02, 03 i 04 despres de cada lectura buida: no ha de sortir cap
-      resultat, nomes les capçaleres.
-  Per que: son les situacions on es mes facil que el programa peti
-  (accedir a posicions que no existeixen, llegir un fitxer que no s'obre).
-
-t4.txt - CAS MINIM: UN SOL ESTABLIMENT
-  Fitxer: proves_un.csv (capçalera + una sola fila)
-  Que fa:
-    - 01: ha de dir 1 linia.
-    - 02 amb la comarca 39 (Aran): ha de sortir un sol municipi, Naut Aran,
-      amb 1 establiment.
-    - 03 amb 259130 (Naut Aran): ha de sortir exactament l'establiment del
-      fitxer, amb el numero de carrer "4" omplert amb zeros (00004) i les
-      places i estances correctes.
-    - 02 amb la comarca 2: es un codi valid pero no te cap dada en aquest
-      fitxer, aixi que nomes ha de sortir la capçalera.
-    - 04: una sola comarca amb un sol municipi.
-  Per que: es el cas mes petit amb dades. Comprova que l'estructura
-  funciona quan cada nivell (comarca, municipi i llista d'establiments)
-  te un sol element, i que el maxim de la 04 es calcula be quan nomes hi
-  ha un candidat.
 
 3. ALTRES COMENTARIS
 --------------------
