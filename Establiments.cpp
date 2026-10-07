@@ -1,11 +1,7 @@
-<<<<<<< HEAD
 // NOM COGNOMS
 // Usuari u1XXXXXXX
 // Exercici 1
 
-=======
-#include <algorithm>
->>>>>>> 050a406ec9e6544e6924744c58000d4b7d06e0e4
 #include "Establiments.h"
 #include "eines.h"
 #include <fstream>
@@ -27,9 +23,9 @@ const int COL_ESTANCES = 25;
 // post: retorna el número format pels dígits de s (ignora qualsevol altre caràcter); si no n'hi ha cap, retorna 0
 static int textANumero(const string &s) {
     int n = 0;
-    for (char c : s)
-        if (c >= '0' && c <= '9')
-            n = n * 10 + (c - '0');
+    for (size_t i = 0; i < s.length(); i++)
+        if (s[i] >= '0' && s[i] <= '9')
+            n = n * 10 + (s[i] - '0');
     return n;
 }
 
@@ -80,7 +76,6 @@ size_t Establiments::llegirDades(const string &path) {
 
 vector<MunicipiResult> Establiments::municipisPerComarca(int codiComarca) const {
     vector<MunicipiResult> resultat;
-<<<<<<< HEAD
     // si el codi no és una posició vàlida del vector (o encara no s'han llegit dades) no hi ha cap municipi
     if (codiComarca >= 1 && codiComarca < int(a_comarques.size())) {
         const vector<Municipi> &municipis = a_comarques[codiComarca].municipis();
@@ -92,18 +87,10 @@ vector<MunicipiResult> Establiments::municipisPerComarca(int codiComarca) const 
         }
         sort(resultat.begin(), resultat.end(), menorPerNom);
     }
-=======
-    if (codiComarca < 1 || codiComarca >= (int)a_comarques.size()) return resultat;
-    for (const Municipi &m : a_comarques[codiComarca].municipis())
-        resultat.push_back({m.nom(), m.nEstabliments()});
-    sort(resultat.begin(), resultat.end(),
-         [](const MunicipiResult &a, const MunicipiResult &b) { return a.nom < b.nom; });
->>>>>>> 050a406ec9e6544e6924744c58000d4b7d06e0e4
     return resultat;
 }
 
 list<Establiment> Establiments::establimentsPerMunicipi(const string &codiMunicipi) const {
-<<<<<<< HEAD
     // per cada comarca, cerca dicotòmica del municipi dins els seus municipis (ordenats per codi)
     for (size_t c = 1; c < a_comarques.size(); c++) {
         int pos = a_comarques[c].cercaDicotomica(codiMunicipi);
@@ -111,18 +98,10 @@ list<Establiment> Establiments::establimentsPerMunicipi(const string &codiMunici
             return a_comarques[c].municipis()[pos].establiments();
     }
     return list<Establiment>(); // no existeix cap municipi amb aquest codi
-=======
-    for (const Comarca &c : a_comarques) {
-        int pos = c.cercaDicotomica(codiMunicipi);
-        if (pos != -1) return c.municipis()[pos].establiments();
-    }
-    return list<Establiment>();
->>>>>>> 050a406ec9e6544e6924744c58000d4b7d06e0e4
 }
 
 MaximMunicipiResults Establiments::maximMunicipi() const {
     MaximMunicipiResults resultat;
-<<<<<<< HEAD
     for (size_t c = 1; c < a_comarques.size(); c++) {
         const Comarca &comarca = a_comarques[c];
         if (!comarca.buida()) {
@@ -135,20 +114,5 @@ MaximMunicipiResults Establiments::maximMunicipi() const {
         }
     }
     sort(resultat.begin(), resultat.end(), ordreMaxim);
-=======
-    for (const Comarca &c : a_comarques) {
-        const Municipi *millor = nullptr;
-        for (const Municipi &m : c.municipis())
-            if (millor == nullptr || m.nEstabliments() >= millor->nEstabliments())
-                millor = &m;
-        if (millor != nullptr)
-            resultat.push_back({c.nom(), millor->nom(), millor->nEstabliments()});
-    }
-    sort(resultat.begin(), resultat.end(),
-         [](const MaximMunicipiResult &a, const MaximMunicipiResult &b) {
-             if (a.nEstabliments != b.nEstabliments) return a.nEstabliments > b.nEstabliments;
-             return a.municipi < b.municipi;
-         });
->>>>>>> 050a406ec9e6544e6924744c58000d4b7d06e0e4
     return resultat;
 }
