@@ -1,5 +1,5 @@
 01
-establimentsLlarg.csv
+/u/prof/dfiguls/Public/establimentsLlarg.csv
 02
 43
 02
