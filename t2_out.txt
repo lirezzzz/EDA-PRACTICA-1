@@ -1,37 +1,107 @@
 ********************
 * 01: Llegir dades *
 ********************
-Numero de linies: 5
-*************************************
-* 03: Codi municipi -> establiments *
-*************************************
-Codi de municipi: 170629
-Hotel Mar, Sol | Riera | num: 00007 | Número inscripció: HUTG-900001 | places: 1713 | estances: 1023
-Sense especificar | Major | num: 52BIS | Número inscripció: HUTG-900002 | places: 0 | estances: 0
-Càmping Les Dunes | Platja | num: 12-14 | Número inscripció: HUTG-900005 | places: 2000 | estances: 350
-*************************************
-* 03: Codi municipi -> establiments *
-*************************************
-Codi de municipi: 170669
-Can Pep | de la Font | num: 0001B | Número inscripció: HUTG-900003 | places: 12 | estances: 4
-*************************************
-* 03: Codi municipi -> establiments *
-*************************************
-Codi de municipi: 170792
-Sense especificar | Pau Casals | num: S/N | Número inscripció: HUTG-900004 | places: 4 | estances: 0
+Numero de linies: 112714
 *********************************
 * 02: Codi comarca -> municipis *
 *********************************
-Codi de comarca: 2
-Escala, l' => 3
-Figueres => 1
+Codi de comarca: 43
+Alpens => 15
+Lluçà => 7
+Olost => 14
+Oristà => 17
+Perafita => 17
+Prats de Lluçanès => 2
+Sant Martí d'Albars => 2
+Sobremunt => 5
 *********************************
 * 02: Codi comarca -> municipis *
 *********************************
-Codi de comarca: 20
-Girona => 1
+Codi de comarca: 5
+Pont de Suert, el => 85
+Vall de Boí, la => 492
+Vilaller => 43
+*********************************
+* 02: Codi comarca -> municipis *
+*********************************
+Codi de comarca: 27
+Barbens => 1
+Bellvís => 1
+Castellnou de Seana => 2
+Fondarella => 1
+Golmés => 3
+Ivars d'Urgell => 7
+Linyola => 5
+Miralcamp => 2
+Mollerussa => 7
+Palau d'Anglesola, el => 1
+Poal, el => 2
+Torregrossa => 6
+Vila-sana => 5
+Vilanova de Bellpuig => 3
+*************************************
+* 03: Codi municipi -> establiments *
+*************************************
+Codi de municipi: 080446
+Nord | Miquel i Mas | num: 00021 | Número inscripció: ATCC-000005 | places: 12 | estances: 6
+Sense especificar | La Pedrera | num: s/n | Número inscripció: HUTCC-000318 | places: 0 | estances: 0
+Sense especificar | Pare Bernadí | num: 00006 | Número inscripció: HUTCC-050719 | places: 0 | estances: 0
+Can Carol | Font de la Reina | num: 00005 | Número inscripció: HCC-004466 | places: 13 | estances: 7
+HABITACIÓN CON PATIO EN PISO COMPARTIDO | Inmaculada Concepció | num: 00020 | Número inscripció: LLCC-000040 | places: 2 | estances: 1
+LLAR COMPARTIDA CARRER GARBÍ 9 | Garbí | num: 00009 | Número inscripció: LLCC-000169 | places: 4 | estances: 3
+*************************************
+* 03: Codi municipi -> establiments *
+*************************************
+Codi de municipi: 430770
+La Vall de Silvestre | Clavell | num: 00064 | Número inscripció: ATTE-000008 | places: 25 | estances: 6
+Sense especificar | Jaume Sabaté | num: 00044 | Número inscripció: HUTTE-034332 | places: 0 | estances: 0
+Sense especificar | de Sant Antoni Abat | num: 00002 | Número inscripció: HUTTE-073902 | places: 5 | estances: 0
+Olivium Mare | 7 | num: Parcela 39 | Número inscripció: HUTTE-078127 | places: 2 | estances: 0
+La Llar del Mas | Molí | num: 00102 | Número inscripció: PTE-000105 | places: 8 | estances: 5
+Can Pla | Josep Subirats | num: 00009 | Número inscripció: PTE-000251 | places: 12 | estances: 6
 *************************************
 * 04: Municipi amb mes establiments *
 *************************************
-Alt Empordà | Escala, l' => 3
-Gironès | Girona => 1
+Barcelonès | Barcelona => 11418
+Tarragonès | Salou => 7207
+Alt Empordà | Roses => 5401
+Baix Camp | Cambrils => 3807
+Selva | Lloret de Mar => 3308
+Baix Empordà | Castell d'Aro, Platja d'Aro i s'Agaró => 2958
+Baix Ebre | Ametlla de Mar, l' => 1805
+Garraf | Sitges => 1778
+Baix Penedès | Calafell => 1724
+Aran | Naut Aran => 1323
+Maresme | Pineda de Mar => 870
+Gironès | Girona => 827
+Montsià | Ràpita, la => 694
+Alta Ribagorça | Vall de Boí, la => 492
+Baix Llobregat | Castelldefels => 469
+Cerdanya | Puigcerdà => 324
+Ripollès | Camprodon => 201
+Pallars Sobirà | Esterri d'Àneu => 200
+Vallès Occidental | Terrassa => 190
+Bages | Manresa => 174
+Garrotxa | Olot => 133
+Segrià | Lleida => 122
+Pla de l'Estany | Banyoles => 115
+Pallars Jussà | Tremp => 106
+Priorat | Cornudella de Montsant => 75
+Alt Urgell | Seu d'Urgell, la => 70
+Osona | Vic => 65
+Conca de Barberà | Montblanc => 63
+Terra Alta | Horta de Sant Joan => 58
+Solsonès | Solsona => 58
+Anoia | Igualada => 52
+Noguera | Àger => 51
+Berguedà | Bagà => 46
+Vallès Oriental | Vallromanes => 42
+Alt Camp | Aiguamúrcia => 39
+Alt Penedès | Olèrdola => 36
+Ribera d'Ebre | Rasquera => 33
+Urgell | Tàrrega => 33
+Moianès | Moià => 23
+Lluçanès | Perafita => 17
+Segarra | Cervera => 16
+Garrigues | Borges Blanques, les => 14
+Pla d'Urgell | Mollerussa => 7
