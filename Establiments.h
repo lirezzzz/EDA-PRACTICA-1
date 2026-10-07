@@ -1,5 +1,5 @@
 // Diego Cortés i Oriol Sala
-// Usuari u6112490
+// Usuari u6112490, u6112518
 // Exercici 1
 
 #ifndef ESTABLIMENTS_H
@@ -9,21 +9,10 @@
 #include <vector>
 #include <list>
 #include "Comarca.h"
+#include "MunicipiResult.h"
+#include "MaximMunicipiResult.h"
 
 using namespace std;
-
-/// Resultat de l'opció 02: un municipi i el seu nombre d'establiments.
-struct MunicipiResult {
-    string nom;
-    size_t nEstabliments;
-};
-
-/// Un element del resultat de l'opció 04.
-struct MaximMunicipiResult {
-    string comarca;
-    string municipi;
-    size_t nEstabliments;
-};
 
 /// Resultat de l'opció 04: per cada comarca, el municipi amb més establiments.
 typedef vector<MaximMunicipiResult> MaximMunicipiResults;

@@ -1,5 +1,5 @@
 // Diego Cortés i Oriol Sala
-// Usuari u6112490
+// Usuari u6112490, u6112518
 // Exercici 1
 
 #include <iostream>
@@ -49,7 +49,7 @@ void opcioMunicipisPerComarca(const Establiments &establiments) {
     mostrarTitol("02: Codi comarca -> municipis");
     cout << "Codi de comarca: " << codi << endl;
     for (const MunicipiResult &m : establiments.municipisPerComarca(codi))
-        cout << m.nom << " => " << m.nEstabliments << endl;
+        cout << m.nom() << " => " << m.nEstabliments() << endl;
 }
 
 string formatNumero(const string &numero) {
@@ -79,8 +79,8 @@ void opcioMaximMunicipi(const Establiments &establiments) {
     MaximMunicipiResults resultat = establiments.maximMunicipi();
     mostrarTitol("04: Municipi amb mes establiments");
     for (size_t i = 0; i < resultat.size(); i++)
-        cout << resultat[i].comarca << " | " << resultat[i].municipi << " => "
-             << resultat[i].nEstabliments << endl;
+        cout << resultat[i].comarca() << " | " << resultat[i].municipi() << " => "
+             << resultat[i].nEstabliments() << endl;
 }
 
 int main() {
@@ -90,13 +90,11 @@ int main() {
     mostrarMenu();
     cin >> opcio;
     while (opcio != 0) {
-        switch (opcio) {
-            case 1: opcioLlegirDades(establiments); break;
-            case 2: opcioMunicipisPerComarca(establiments); break;
-            case 3: opcioEstablimentsPerMunicipi(establiments); break;
-            case 4: opcioMaximMunicipi(establiments); break;
-            default: cerr << "Opcio incorrecta" << endl;
-        }
+        if (opcio == 1) opcioLlegirDades(establiments);
+        else if (opcio == 2) opcioMunicipisPerComarca(establiments);
+        else if (opcio == 3) opcioEstablimentsPerMunicipi(establiments);
+        else if (opcio == 4) opcioMaximMunicipi(establiments);
+        else cerr << "Opcio incorrecta" << endl;
         mostrarMenu();
         cin >> opcio;
     }

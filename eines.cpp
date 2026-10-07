@@ -1,6 +1,3 @@
-// Diego Cortés i Oriol Sala
-// Usuari u6112490
-// Exercici 1
 
 //
 // Created by jordir on 25/9/21.

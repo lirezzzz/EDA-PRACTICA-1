@@ -1,5 +1,5 @@
 // Diego Cortés i Oriol Sala
-// Usuari u6112490
+// Usuari u6112490, u6112518
 // Exercici 1
 
 #include "Establiments.h"
@@ -32,15 +32,15 @@ static int textANumero(const string &s) {
 // pre: cert
 // post: diu si el municipi a va abans que b per nom
 static bool menorPerNom(const MunicipiResult &a, const MunicipiResult &b) {
-    return a.nom < b.nom;
+    return a.nom() < b.nom();
 }
 
 // pre: cert
 // post: diu si a va abans que b: més establiments primer i, en cas d'empat, nom del municipi ascendent
 static bool ordreMaxim(const MaximMunicipiResult &a, const MaximMunicipiResult &b) {
-    if (a.nEstabliments != b.nEstabliments)
-        return a.nEstabliments > b.nEstabliments;
-    return a.municipi < b.municipi;
+    if (a.nEstabliments() != b.nEstabliments())
+        return a.nEstabliments() > b.nEstabliments();
+    return a.municipi() < b.municipi();
 }
 
 size_t Establiments::llegirDades(const string &path) {
@@ -56,7 +56,7 @@ size_t Establiments::llegirDades(const string &path) {
     getline(f, linia);              
     while (!f.eof()) {
         vector<string> camps = tokens(linia, ',', true);
-        if (camps.size() == 33) {   // Oriol aixo es perdescartar linees buides o malament formades
+        if (camps.size() == 33) {   // Oriol aixo es per descartar linees buides o malament formades
             Establiment e(camps[COL_RETOL], 
                         camps[COL_NOM_VIA], 
                         camps[COL_NUMERO],
@@ -80,10 +80,7 @@ vector<MunicipiResult> Establiments::municipisPerComarca(int codiComarca) const 
     if (codiComarca >= 1 && codiComarca < int(a_comarques.size())) {
         const vector<Municipi> &municipis = a_comarques[codiComarca].municipis();
         for (size_t i = 0; i < municipis.size(); i++) {
-            MunicipiResult r;
-            r.nom = municipis[i].nom();
-            r.nEstabliments = municipis[i].nEstabliments();
-            resultat.push_back(r);
+            resultat.push_back(MunicipiResult(municipis[i].nom(), municipis[i].nEstabliments()));
         }
         sort(resultat.begin(), resultat.end(), menorPerNom);
     }
@@ -105,12 +102,8 @@ MaximMunicipiResults Establiments::maximMunicipi() const {
     for (size_t c = 1; c < a_comarques.size(); c++) {
         const Comarca &comarca = a_comarques[c];
         if (!comarca.buida()) {
-            const Municipi &maxim = comarca.municipiMaxim(); // guardat durant la lectura: no recorrem els municipis
-            MaximMunicipiResult r;
-            r.comarca = comarca.nom();
-            r.municipi = maxim.nom();
-            r.nEstabliments = maxim.nEstabliments();
-            resultat.push_back(r);
+            const Municipi &maxim = comarca.municipiMaxim(); // guardat durant la lectura,no recorrem els municipis per fer millor el temps
+            resultat.push_back(MaximMunicipiResult(comarca.nom(), maxim.nom(), maxim.nEstabliments()));
         }
     }
     sort(resultat.begin(), resultat.end(), ordreMaxim);
