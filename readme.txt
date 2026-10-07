@@ -35,7 +35,7 @@ coma i camps entre cometes), pensats per provar casos concrets que el
 fitxer real no prova o que costa trobar-hi.
 
 Hem seguit la idea de provar primer l'escenari normal (t1 i t2) i despres
-escenaris poc habituals pero possibles (t3, t4 i t5).
+escenaris poc habituals pero possibles (t3 i t4).
 
 t1.txt - ESCENARI NORMAL AMB EL FITXER CURT DEL PROFESSOR
   Fitxer: /u/prof/dfiguls/Public/establimentsCurt.csv (225 files)
@@ -86,55 +86,22 @@ t3.txt - SENSE DADES: CONSULTES AMB L'ESTRUCTURA BUIDA
   Per que: son les situacions on es mes facil que el programa peti
   (accedir a posicions que no existeixen, llegir un fitxer que no s'obre).
 
-t4.txt - FORMAT DEL CSV I CASOS LIMIT DE DADES
-  Fitxers: proves_format.csv (5 establiments i una linia buida) i
-           proves_un.csv (un sol establiment)
-  Que fa amb proves_format.csv:
-    - Camps amb comes dins de les cometes ("Hotel Mar, Sol" i el municipi
-      "Escala, l'"): han de llegir-se com un sol camp.
-    - Places i estances buides: han de sortir com a 0.
-    - Places i estances amb punt de milers ("1.713", "2.000"): han de
-      sortir com 1713 i 2000.
-    - Numeros de carrer de tots els tipus: "7" -> 00007, "1B" -> 0001B,
-      "52BIS" i "12-14" (5 caracters, es queden igual), "S/N" (no comença
-      per digit, es queda igual).
-    - Una linia buida enmig del fitxer: s'ha de descartar i no comptar
-      (ha de dir 5 linies, no 6).
-    - Codis fora de rang: comarques 0, 44 i 99 i municipi 999999. No ha de
-      sortir cap resultat ni petar (el codi 44 i el 99 queden fora del
-      vector de comarques).
-  Que fa amb proves_un.csv:
-    - El cas minim amb dades: una comarca, un municipi i un establiment.
-      La 02, la 03 i la 04 han de mostrar exactament aquest establiment.
-    - Una 02 d'una comarca que estava al fitxer anterior (la 2): ja no hi
-      ha de ser.
-  Per que: comprova que la lectura del CSV i la conversio de numeros son
-  correctes en els casos dificils del format.
-
-t5.txt - ORDENACIO, EMPATS I RECARREGAR DADES
-  Fitxers: proves_ordre.csv (17 establiments barrejats) i proves_format.csv
-  Que fa amb proves_ordre.csv:
-    - 02 amb la comarca 21: els municipis surten ordenats per nom, no pel
-      codi ni per l'ordre del fitxer. "Orrius" (amb accent) va al final.
-    - 03 amb 080193 i 081635: els establiments surten en l'ordre del
-      fitxer, encara que estiguin barrejats amb els d'altres municipis.
-    - El municipi 080193 apareix com "Barcelona" i despres com "BARCELONA":
-      s'ha de quedar el nom de la primera aparicio.
-    - 04 amb empat dins d'una comarca: Pineda de Mar i Calella tenen 3, pero
-      Pineda hi arriba primer en el fitxer, aixi que guanya Pineda (encara
-      que Calella vagi abans per ordre alfabetic). Igual a Tarragones:
-      guanya Vila-seca i no Salou.
-    - 04 amb empat entre comarques: Barcelona i Pineda de Mar tenen 3; es
-      mostren ordenats pel nom del municipi.
-  Que fa despres:
-    - Llegeix proves_format.csv: les dades de proves_ordre.csv han de
-      desapareixer (la 04 i la 02 de la comarca 21 ja no les mostren).
-    - Torna a llegir el MATEIX fitxer: no s'han de duplicar els
-      establiments (l'Escala ha de seguir tenint 3, no 6).
-    - La mateixa consulta 02 dues vegades seguides: ha de donar el mateix
-      (les consultes no modifiquen les dades).
-  Per que: comprova els criteris d'ordenacio i desempat de l'enunciat i
-  que llegir dades substitueix les anteriors.
+t4.txt - CAS MINIM: UN SOL ESTABLIMENT
+  Fitxer: proves_un.csv (capçalera + una sola fila)
+  Que fa:
+    - 01: ha de dir 1 linia.
+    - 02 amb la comarca 39 (Aran): ha de sortir un sol municipi, Naut Aran,
+      amb 1 establiment.
+    - 03 amb 259130 (Naut Aran): ha de sortir exactament l'establiment del
+      fitxer, amb el numero de carrer "4" omplert amb zeros (00004) i les
+      places i estances correctes.
+    - 02 amb la comarca 2: es un codi valid pero no te cap dada en aquest
+      fitxer, aixi que nomes ha de sortir la capçalera.
+    - 04: una sola comarca amb un sol municipi.
+  Per que: es el cas mes petit amb dades. Comprova que l'estructura
+  funciona quan cada nivell (comarca, municipi i llista d'establiments)
+  te un sol element, i que el maxim de la 04 es calcula be quan nomes hi
+  ha un candidat.
 
 3. ALTRES COMENTARIS
 --------------------
