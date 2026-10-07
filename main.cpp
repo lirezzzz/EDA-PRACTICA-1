@@ -56,7 +56,11 @@ void opcioEstablimentsPerMunicipi(const Establiments &establiments) {
 void opcioMaximMunicipi(const Establiments &establiments) {
     // pre: cert
     // post: mostra, per cada comarca, el municipi amb més establiments
-    // TODO
+    MaximMunicipiResults resultat = establiments.maximMunicipi();
+    mostrarTitol("04: Municipi amb mes establiments");
+    for (size_t i = 0; i < resultat.size(); i++)
+        cout << resultat[i].comarca << " | " << resultat[i].municipi << " => "
+             << resultat[i].nEstabliments << endl;
 }
 
 int main() {

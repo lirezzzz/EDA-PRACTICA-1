@@ -38,15 +38,19 @@ public:
 
     vector<MunicipiResult> municipisPerComarca(int codiComarca) const;
     // pre: cert
-    // post: TODO
+    // post: retorna els municipis de la comarca codiComarca amb el seu nombre d'establiments,
+    //       ordenats pel nom del municipi ascendentment; buit si la comarca no existeix
 
     list<Establiment> establimentsPerMunicipi(const string &codiMunicipi) const;
     // pre: cert
-    // post: TODO
+    // post: retorna els establiments del municipi amb codi IDESCAT codiMunicipi en l'ordre del fitxer;
+    //       buida si el municipi no existeix
 
     MaximMunicipiResults maximMunicipi() const;
     // pre: cert
-    // post: TODO
+    // post: retorna, per cada comarca amb dades, el municipi amb més establiments (en cas d'empat dins
+    //       la comarca, el que hi ha arribat primer en l'ordre del fitxer), ordenats pel nombre
+    //       d'establiments descendentment i, en cas d'empat, pel nom del municipi ascendentment
 
 private:
     vector<Comarca> a_comarques; // cada comarca conté els seus municipis

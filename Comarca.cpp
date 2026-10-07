@@ -4,9 +4,9 @@
 
 #include "Comarca.h"
 
-Comarca::Comarca() : a_codi(0) {}
+Comarca::Comarca() : a_codi(0), a_nMaxim(0) {}
 
-Comarca::Comarca(int codi, const string &nom) : a_codi(codi), a_nom(nom) {}
+Comarca::Comarca(int codi, const string &nom) : a_codi(codi), a_nom(nom), a_nMaxim(0) {}
 
 int Comarca::codi() const {
     return a_codi;
@@ -60,4 +60,16 @@ void Comarca::afegirEstabliment(const string &codiMunicipi, const string &nomMun
         a_municipis.insert(a_municipis.begin() + pos, Municipi(codiMunicipi, nomMunicipi));
     }
     a_municipis[pos].afegirEstabliment(e);
+
+    // actualitzem el màxim: amb > estricte, en cas d'empat es queda el que hi ha arribat primer
+    size_t n = a_municipis[pos].nEstabliments();
+    if (n > a_nMaxim) {
+        a_nMaxim = n;
+        a_codiMaxim = codiMunicipi;
+    }
+}
+
+const Municipi &Comarca::municipiMaxim() const {
+    // guardem el codi i no la posició perquè els insert desplacen els municipis dins el vector
+    return a_municipis[cercaDicotomica(a_codiMaxim)];
 }
