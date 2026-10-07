@@ -1,5 +1,5 @@
 EDA - Exercici 1: Vector i list
-NOM COGNOMS (u1XXXXXXX)
+Diego Cortés i Oriol Sala (u6112490)
 
 1. QUE FA EL PROGRAMA
 ---------------------

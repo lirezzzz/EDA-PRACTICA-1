@@ -1,5 +1,5 @@
-// NOM COGNOMS
-// Usuari u1XXXXXXX
+// Diego Cortés i Oriol Sala
+// Usuari u6112490
 // Exercici 1
 
 #ifndef ESTABLIMENT_H
