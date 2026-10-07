@@ -1,4 +1,3 @@
-#include <cctype>
 #include <iostream>
 #include <string>
 #include <vector>
@@ -52,7 +51,7 @@ void opcioMunicipisPerComarca(const Establiments &establiments) {
 string formatNumero(const string &numero) {
     // pre: cert
     // post: retorna numero; si comença per dígit, s'omple amb zeros a l'esquerra fins a 5 caràcters
-    if (numero.empty() || !isdigit((unsigned char)numero[0]) || numero.length() >= 5)
+    if (numero.empty() || numero[0] < '0' || numero[0] > '9' || numero.length() >= 5)
         return numero;
     return string(5 - numero.length(), '0') + numero;
 }
