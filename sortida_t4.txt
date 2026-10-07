@@ -1,0 +1,47 @@
+********************
+* 01: Llegir dades *
+********************
+Numero de linies: 5
+*************************************
+* 04: Municipi amb mes establiments *
+*************************************
+Alt Empordà | Escala, l' => 3
+Gironès | Girona => 1
+********************
+* 01: Llegir dades *
+********************
+Numero de linies: 17
+*************************************
+* 04: Municipi amb mes establiments *
+*************************************
+Barcelonès | Barcelona => 3
+Maresme | Pineda de Mar => 3
+Tarragonès | Vila-seca => 2
+*********************************
+* 02: Codi comarca -> municipis *
+*********************************
+Codi de comarca: 2
+*************************************
+* 03: Codi municipi -> establiments *
+*************************************
+Codi de municipi: 170629
+*********************************
+* 02: Codi comarca -> municipis *
+*********************************
+Codi de comarca: 0
+*********************************
+* 02: Codi comarca -> municipis *
+*********************************
+Codi de comarca: 43
+*********************************
+* 02: Codi comarca -> municipis *
+*********************************
+Codi de comarca: 44
+*********************************
+* 02: Codi comarca -> municipis *
+*********************************
+Codi de comarca: 99
+*************************************
+* 03: Codi municipi -> establiments *
+*************************************
+Codi de municipi: 999999

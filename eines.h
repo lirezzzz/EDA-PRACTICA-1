@@ -1,3 +1,7 @@
+// NOM COGNOMS
+// Usuari u1XXXXXXX
+// Exercici 1
+
 //
 // Created by jordir on 25/9/21.
 //

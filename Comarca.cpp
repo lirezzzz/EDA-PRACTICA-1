@@ -1,3 +1,7 @@
+// NOM COGNOMS
+// Usuari u1XXXXXXX
+// Exercici 1
+
 #include "Comarca.h"
 
 Comarca::Comarca() : a_codi(0) {}
@@ -51,11 +55,9 @@ bool Comarca::existeix(const string &codiMunicipi) const {
 
 void Comarca::afegirEstabliment(const string &codiMunicipi, const string &nomMunicipi,
                                 const Establiment &e) {
- int pos;
-
-  if (cercaDicotomica(codiMunicipi, pos) == -1) // no existeix: pos es on ha d'anar per mantenir l'ordre
-  {
-    a_municipis.insert(a_municipis.begin() + pos, Municipi(codiMunicipi, nomMunicipi));
-  }
-  a_municipis[pos].afegirEstabliment(e);
+    int pos;
+    if (cercaDicotomica(codiMunicipi, pos) == -1) { // no existeix: pos és on ha d'anar per mantenir l'ordre
+        a_municipis.insert(a_municipis.begin() + pos, Municipi(codiMunicipi, nomMunicipi));
+    }
+    a_municipis[pos].afegirEstabliment(e);
 }

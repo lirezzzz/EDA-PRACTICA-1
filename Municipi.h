@@ -1,3 +1,7 @@
+// NOM COGNOMS
+// Usuari u1XXXXXXX
+// Exercici 1
+
 #ifndef MUNICIPI_H
 #define MUNICIPI_H
 
@@ -7,7 +11,7 @@
 
 using namespace std;
 
-//Aquesta classe es un
+/// Un municipi amb la llista dels seus establiments, en l'ordre del fitxer CSV.
 class Municipi {
 public:
     Municipi();

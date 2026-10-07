@@ -1,3 +1,7 @@
+// NOM COGNOMS
+// Usuari u1XXXXXXX
+// Exercici 1
+
 #ifndef COMARCA_H
 #define COMARCA_H
 

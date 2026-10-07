@@ -1,3 +1,7 @@
+// NOM COGNOMS
+// Usuari u1XXXXXXX
+// Exercici 1
+
 #include "Municipi.h"
 
 Municipi::Municipi() {}

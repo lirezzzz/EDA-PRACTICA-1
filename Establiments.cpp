@@ -1,3 +1,7 @@
+// NOM COGNOMS
+// Usuari u1XXXXXXX
+// Exercici 1
+
 #include "Establiments.h"
 #include "eines.h"
 #include <fstream>

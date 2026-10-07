@@ -1,3 +1,7 @@
+// NOM COGNOMS
+// Usuari u1XXXXXXX
+// Exercici 1
+
 #include "Establiment.h"
 
 Establiment::Establiment() : a_places(0), a_estances(0) {}

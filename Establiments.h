@@ -1,3 +1,7 @@
+// NOM COGNOMS
+// Usuari u1XXXXXXX
+// Exercici 1
+
 #ifndef ESTABLIMENTS_H
 #define ESTABLIMENTS_H
 
@@ -27,8 +31,10 @@ typedef vector<MaximMunicipiResult> MaximMunicipiResults;
 class Establiments {
 public:
     size_t llegirDades(const string &path);
-    // pre: cert
-    // post: TODO
+    // pre: path és el camí d'un fitxer CSV amb una línia de capçalera, separador ',' i camps entre cometes
+    // post: s'han eliminat les dades carregades prèviament i aquest Establiments conté els establiments
+    //       del fitxer agrupats per comarca i municipi; retorna el nombre de files de dades llegides
+    //       (0 si el fitxer no s'ha pogut obrir)
 
     vector<MunicipiResult> municipisPerComarca(int codiComarca) const;
     // pre: cert

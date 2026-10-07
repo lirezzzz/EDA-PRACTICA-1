@@ -1,3 +1,7 @@
+// NOM COGNOMS
+// Usuari u1XXXXXXX
+// Exercici 1
+
 #ifndef ESTABLIMENT_H
 #define ESTABLIMENT_H
 
